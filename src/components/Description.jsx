@@ -51,7 +51,7 @@ export default function Description() {
         variants={variants}
         animate= {cursorVariant}
        />
-      <p onMouseEnter={textEnter} onMouseLeave={textLeave} className="relative z-10 top-4 left-[10%] description text-center text-lg  max-w-xl p-10 ">
+      <p onMouseEnter={textEnter} onMouseLeave={textLeave} className="relative z-10 top-4 left-[10%] description text-center text-xs sm:text-lg  max-w-xl p-10 ">
         Gracias por pasar a conocer nuestro página, somos Liliana y Mariana
         Reyes, nos dedicamos al arte desde pequeñas, somos un duo muy creativo y
         lo expresamos de diversas formas, pinturas al oleo, murales,

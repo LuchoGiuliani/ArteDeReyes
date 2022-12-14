@@ -34,7 +34,8 @@ height: 100%;
 .navbar_container {
   display: flex;
   justify-content: space-between;
-  padding: 40px;
+  padding: 12px;
+  align-items: center;
   
 }
 .insta_img {
@@ -58,11 +59,23 @@ align-items: center;
 
 /*  MENU              */
 .links.active{
-  visibility: hidden;
+  
+  visibility: visible;
+}
+.links.open{
+  visibility: visible;
 }
 
 .links {
-  display: flex;
-  flex-direction: column;
+  visibility: hidden;
+  position: absolute;
+max-width: 120px;
+display: flex;
+flex-direction: column;
+align-items: center;
+right: 13px;
+
+  
+  
   
 }
