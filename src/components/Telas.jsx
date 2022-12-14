@@ -84,7 +84,7 @@ export default function Telas() {
       <div className="flex justify-center">
         <div className=" max-w-max rounded-xl m-12 flex columns-2 items-center justify-between   bg-[#edcd9e]">
           <div
-            className="flex justify-center w-fit"
+            className="flex justify-center "
            
           >
             <img className="p-2 w-[90%] min-w-[100px] max-h-[600px] md:p-8" src="/buho.png" alt="" />
