@@ -73,8 +73,8 @@ export default function Telas() {
         <div className=" max-w-max rounded-xl ml-20 mr-20 flex items-center justify-center   bg-[#edcd9e]">
           <div
             data-aos="zoom-in-down"
-            data-aos-delay="200"
-            data-aos-offset="500"
+            data-aos-delay="100"
+            data-aos-offset="100"
             data-aos-easing="ease-in-sine"
           >
             <img className="max-h-[600px] p-2 md:p-8" src="/mix.png" alt="" />
@@ -84,7 +84,7 @@ export default function Telas() {
       <div className="flex justify-center">
         <div className=" max-w-max rounded-xl m-12 flex columns-2 items-center justify-between   bg-[#edcd9e]">
           <div
-            className="flex justify-center"
+            className="flex justify-center w-fit"
            
           >
             <img className="p-2 w-[90%] min-w-[100px] max-h-[600px] md:p-8" src="/buho.png" alt="" />
@@ -114,14 +114,14 @@ export default function Telas() {
           valen la pena.
         </p>
       </div>
-      <div className="  items-center grid_containter grid grid-cols-2 gap-2 ">
+      <div className=" justify-items-center items-center grid_containter grid grid-cols-2 gap-2 ">
         <div
           onMouseEnter={textEnter}
           onMouseLeave={textLeave}
-          className=" flex justify-center m-4"
+          className=" flex justify-center m-4 w-fit"
         >
           <img
-            className=" rounded-[26px] shadow-xl ease-in-out max-w-[300px] min-w-[200px]"
+            className=" rounded-[26px] shadow-xl ease-in-out sm:max-w-[300px] "
             src="/buho_grid.png"
             alt=""
           />
@@ -129,37 +129,37 @@ export default function Telas() {
         <div
           onMouseEnter={textEnter2}
           onMouseLeave={textLeave}
-          className=" flex justify-center m-4"
+          className=" flex justify-center m-4 w-fit"
         >
-          <img className="rounded-[26px] shadow-xl max-w-[300px] min-w-[200px]" src="/bull_frances.png" alt="" />
+          <img className="rounded-[26px] shadow-xl sm:max-w-[300px]" src="/bull_frances.png" alt="" />
         </div>
         <div
           onMouseEnter={textEnter2}
           onMouseLeave={textLeave}
-          className=" flex justify-center m-4"
+          className=" flex justify-center m-4 w-fit"
         >
-          <img className="rounded-[26px] shadow-xl max-w-[300px] min-w-[200px]" src="/conejo.png" alt="" />
+          <img className="rounded-[26px] shadow-xl sm:max-w-[300px] " src="/conejo.png" alt="" />
         </div>
         <div
           onMouseEnter={textEnter}
           onMouseLeave={textLeave}
-          className=" flex justify-center m-4"
+          className=" flex justify-center m-4 w-fit"
         >
-          <img className="rounded-[26px] shadow-xl max-w-[300px] min-w-[200px]" src="/pets.png" alt="" />
+          <img className="rounded-[26px] shadow-xl sm:max-w-[300px] " src="/pets.png" alt="" />
+        </div>
+        <div
+          onMouseEnter={textEnter}
+          onMouseLeave={textLeave}
+          className=" flex justify-center m-4 w-fit"
+        >
+          <img className="rounded-[26px] shadow-xl sm:max-w-[300px]" src="/gato.png" alt="" />
         </div>
         <div
           onMouseEnter={textEnter2}
           onMouseLeave={textLeave}
-          className=" flex justify-center m-4"
+          className=" flex justify-center m-4 w-fit"
         >
-          <img className="rounded-[26px] shadow-xl max-w-[300px] min-w-[200px]" src="/gato.png" alt="" />
-        </div>
-        <div
-          onMouseEnter={textEnter}
-          onMouseLeave={textLeave}
-          className=" flex justify-center m-4"
-        >
-          <img className="rounded-[26px] shadow-xl max-w-[300px] min-w-[200px]" src="/abeja.png" alt="" />
+          <img className="rounded-[26px] shadow-xl sm:max-w-[300px]" src="/abeja.png" alt="" />
         </div>
       </div>
     </div>

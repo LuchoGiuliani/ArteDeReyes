@@ -34,7 +34,7 @@ export default function Front() {
       width: 150,
       x: mousePosition.x - 75,
       y: mousePosition.y - 75,
-      mixBlendMode: "difference",
+      mixBlendMode: "saturation",
     },
   };
 

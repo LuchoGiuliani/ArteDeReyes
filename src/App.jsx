@@ -20,7 +20,9 @@ function App() {
 
   return (
     <div className="App background">
-      <div className='wsp'><img src="/whatsapp.png" alt="" /></div>
+      <a href='#front' className='wsp'>
+        <img src="/whatsapp.png" alt="" />
+      </a>
      
      
       {/* navbar */}

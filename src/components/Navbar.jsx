@@ -35,11 +35,10 @@ export default function Navbar() {
 
       <div className="">
         <Menu clicked={clicked} handleClick={handleClick} />
-        <div className={`links ${clicked ? "active" : ""}`}>
-          <a href="#front">Principal</a>
-          <a href="#telas">Télas</a>
-          <a href="#oleo">Óleo</a>
-          <a href="#murales">Murales</a>
+        <div className={`pt-2  links ${clicked ? "active" : ""}`}>      
+          <a className="hover:underline hover:decoration-solid" href="#telas">Télas</a>
+          <a className="hover:underline hover:decoration-solid " href="#oleo">Óleo</a>
+          <a className="hover:underline hover:decoration-solid" href="#murales">Murales</a>
         </div>
       </div>
     </div>
