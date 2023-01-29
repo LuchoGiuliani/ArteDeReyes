@@ -1,6 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import Description from "./Description";
+import Text from "./Letter";
 
 export default function Front() {
   const [mousePosition, setMousePosition] = useState({
@@ -34,7 +36,7 @@ export default function Front() {
       width: 150,
       x: mousePosition.x - 75,
       y: mousePosition.y - 75,
-      mixBlendMode: "saturation",
+      mixBlendMode: "multiply" ,
     },
   };
 
@@ -42,18 +44,27 @@ export default function Front() {
   const textLeave = () => setCursorVariant("default");
 
   return (
-    <div id="front" className="flex flex-col items-center pr-14 p-2 justify-evenly gap-10 sm:p-7 sm:flex-row  ">
+<div className="">
+  
+    <div id="front" className="flex justify-evenly items-center  p-2 gap-10 sm:p-7 sm:justify-between  ">
       <motion.div
         className="cursor"
         variants={variants}
         animate={cursorVariant}
       />
-      <div onMouseEnter={textEnter} onMouseLeave={textLeave} className=" w-1/5">
-        <h1 className="text-5xl drop-shadow-md sm:text-9xl ">Arte de Reyes</h1>
+      <div className="circle rounded-[50%]"></div>
+      <div  className="w-1/5">
+       
+        <h1  onMouseEnter={textEnter} onMouseLeave={textLeave}  className=" z-50 text-3xl   sm:text-9xl drop-shadow-2xl art_reyes  ">Arte De Reyes</h1>
       </div>
+     
       <div className=" w-[30%]">
-        <img className="min-w-[180px]" src="/marcoFrances.png" alt="" />
+        <img className="min-w-[10%] " src="/front_paint.png" alt="" />
       </div>
+   
     </div>
+   
+    </div>
+    
   );
 }

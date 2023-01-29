@@ -1,13 +1,22 @@
-import React from 'react'
+import { motion } from "framer-motion";
 
 function Menu(props) {
+  const menuVariants = {
+    open: { height: "auto" },
+    closed: { height: 0 },
+  };
+
   return (
-    <>  
-    <div className='cursor-pointer max-w-[80px] sm:max-w-full flex justify-end ' onClick={props.handleClick} >
-        <img src="/Menu.png" className={`icon w-[70%] ${props.clicked ? 'open' : ''}`} alt="" />
-    </div>
-    </>
-  )
+    <motion.div
+      className=" cursor-pointer m-2 sm:max-w-full flex items-center "
+      onClick={props.handleClick}
+      animate={props.clicked ? "open" : "closed"}
+      variants={menuVariants}
+      transition={{ duration: 0.5 }}
+    >
+      <h4 className="icon text-lg font-medium p-1" alt="">Menu</h4>
+    </motion.div>
+  );
 }
 
-export default Menu
+export default Menu;

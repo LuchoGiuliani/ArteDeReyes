@@ -1,16 +1,9 @@
 import React from "react";
-import { HiMenuAlt4 } from "react-icons/hi";
 import { motion } from "framer-motion";
-import { useState } from "react";
-import { Link, Route, Routes } from "react-router-dom";
-import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import Description from "./Description";
-import Front from "./Front";
-import Telas from "./Telas";
-import Oleo from "./Oleo";
-import Murales from "./Murales";
+import { useState } from "react";
+
+
 import Menu from "./Menu";
 
 export default function Navbar() {
@@ -34,11 +27,12 @@ export default function Navbar() {
         />
       </a>
 
-      <div className="">
-        <Menu clicked={clicked} handleClick={handleClick} />
-        <div className={`pt-2  links ${clicked ? "active" : ""}`}>      
-          <a className="hover:underline hover:decoration-solid" href="#telas">Télas</a>
-          <a className="hover:underline hover:decoration-solid " href="#oleo">Óleo</a>
+      <div className=" z-50   ">
+        
+        <Menu  clicked={clicked} handleClick={handleClick} />
+        <div className={` sm:none  links ${clicked ? "active" : ""}`}>      
+          <a className="hover:underline hover:decoration-solid" href="#telas">Telas</a>
+          <a className="hover:underline hover:decoration-solid " href="#oleo">Tec.Mixtas</a>
           <a className="hover:underline hover:decoration-solid" href="#murales">Murales</a>
         </div>
       </div>

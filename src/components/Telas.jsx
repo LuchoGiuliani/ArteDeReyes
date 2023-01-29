@@ -5,10 +5,20 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 export default function Telas() {
+  const [angle, setAngle] = useState(0);
+
+  const handleMouseOver = () => {
+    setAngle(90);
+  } 
+
   const [mousePosition, setMousePosition] = useState({
     x: 0,
     y: 0,
   });
+
+  const handleMouseOut = () => {
+    setAngle(0);
+  }
 
   const [cursorVariant, setCursorVariant] = useState("default");
 
@@ -56,21 +66,52 @@ export default function Telas() {
     AOS.init();
   }, []);
   return (
-    <div id="telas" className="">
+    <div id="telas" className="p-4 z-30">
       <motion.div
         className="cursor"
         variants={variants}
         animate={cursorVariant}
       />
       <div className=" flex justify-center ">
-        <img
-          className=" p-4 flex justify-center max-w-xs"
-          src="/telas.png"
-          alt=""
-        />
+        <h1 className="text-4x1  font-normal pt-12 sm:text-6xl">Almohadones</h1>
       </div>
-      <div className="flex justify-center">
-        <div className=" max-w-max rounded-xl ml-20 mr-20 flex items-center justify-center   bg-[#edcd9e]">
+      <div className="mix_grid  p-4	">
+       <div className="mix_grid1 ">
+        <div className="flex flex-col justify-center gap-16">
+        <img className="mix1 w-fit  " src="/mix_grid3.png" alt="" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}  /> 
+        <div className="text_container"> <h1 className=" text-base text-center text">Perpetuar el amor a una mascota con un retrato de él, detalles que valen la pena. </h1></div>
+        </div>
+        <img className="mix2  " src="/mix_grid2.png" alt="" />
+        <img className="mix3    " src="/mix_grid9.png" alt="" />
+        <img className="mix4   " src="/mix_grid4.png" alt="" />
+        <img className="mix5  " src="/mix_grid5.png" alt="" />
+        </div>
+        <div className="mix_grid2">
+        {/* <img className="mix6" src="/mix_grid8.png" alt="" /> */}
+        <img className="mix7" src="/mix_grid7.png" alt="" />
+        </div>
+        <div className="mix_grid3">
+        <img className="mix8" src="/mix_grid8.png" alt="" />
+        <img className="mix9" src="/mix_grid3.png" alt="" />
+        <img className="mix10" src="/mix_grid10.png" alt="" />
+        <img className="mix11" src="/mix_grid11.png" alt="" />
+        {/* <img className="mix12" src="/mix_grid12.png" alt="" /> */}
+        <img className="mix13" src="/mix_grid13.png" alt="" />
+        </div>
+        <div className="mix_grid4">
+        <img className="mix14 " src="/mix_grid14.png" alt="" />
+        </div>
+        <div className="mix_grid5 pb-8">
+        {/* <img className="mix15" src="/mix_grid10.png" alt="" /> */}
+        <img className="mix16" src="/mix_grid16.png" alt="" />
+        <img className="mix17" src="/mix_grid17.png" alt="" />
+        </div>
+
+
+
+
+
+        {/* <div className=" max-w-max rounded-xl ml-20 mr-20 flex items-center justify-center   bg-[#edcd9e]">
           <div
             data-aos="zoom-in-down"
             data-aos-delay="100"
@@ -81,8 +122,8 @@ export default function Telas() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center">
-        <div className=" max-w-max rounded-xl m-12 flex columns-2 items-center justify-between   bg-[#edcd9e]">
+      <div className="flex justify-center"> */}
+        {/* <div className=" max-w-max rounded-xl m-12 flex columns-2 items-center justify-between   bg-[#edcd9e]">
           <div
             className="flex justify-center "
            
@@ -160,7 +201,7 @@ export default function Telas() {
           className=" flex justify-center m-4 w-fit"
         >
           <img className="rounded-[26px] shadow-xl sm:max-w-[300px]" src="/abeja.png" alt="" />
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -23,24 +23,20 @@ function App() {
       <a href='#front' className='wsp'>
         <img src="/whatsapp.png" alt="" />
       </a>
-     
-     
       {/* navbar */}
       <div className='main_container h-full'>
       <Navbar />
       {/* front */}
       <Front />
       {/* description */}
-      <Description />
+      {<Description />}
       </div>
-
-      {/* telas */}
-      <Telas />
       {/* oleo */}
       <Oleo />
-     
-     {/* murales */}
-     <Murales />
+      {/* telas */}
+      <Telas />   
+      {/* murales */}
+      <Murales />
       {/* footer */}
       <Footer />
     

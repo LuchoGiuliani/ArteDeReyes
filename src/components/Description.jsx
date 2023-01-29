@@ -51,14 +51,21 @@ export default function Description() {
         variants={variants}
         animate= {cursorVariant}
        />
-      <p onMouseEnter={textEnter} onMouseLeave={textLeave} className="relative z-10 top-4 left-[10%] description text-center text-xs sm:text-lg  max-w-xl p-10 ">
-        Gracias por pasar a conocer nuestro página, somos Liliana y Mariana
-        Reyes, nos dedicamos al arte desde pequeñas, somos un duo muy creativo y
-        lo expresamos de diversas formas, pinturas al oleo, murales,
-        restauración de muebles, intervención en telas, son algunas de las cosas
-        que nos divierte hacer.
-      </p>
-      <img className="relative w-[20%] top-20 right-10" src="/arrow.svg" alt="" />
+      <h1 onMouseEnter={textEnter} onMouseLeave={textLeave} className="relative z-10 top-4 left-[10%] description text-center text-xs sm:text-lg  max-w-xl p-4 pb-7 ">
+      Gracias por pasar a conocer nuestra página! 
+Somos Liliana y Mariana REYES, artistas de esencia.
+Desde muy pequeñas incursionamos en el mundo creativo, y no hace mucho, fusionamos nuestros talentos para trabajar juntas en las mismas obras, logrando así un mejor resultado.
+Es una experiencia de hermanas maravillosa, en la cual potenciamos nuestras capacidades. 
+Esperamos que lo disfruten!
+      </h1>
+      <img className="relative w-[20%] top-28 right-10" src="/arrow.svg" alt="" />
+      {/* <div>
+        <img src="/pencil.svg" alt="" className="pencil2  fixed hover:sepia" />
+        <img src="/brush.svg" alt="" className="brush fixed  top-2 hover:sepia" />
+        <img src="/paintbrush.svg" alt="" className="pencil1 -z-0  hover:sepia" />
+        <img src="/spiral.svg" alt="" className="pencil fixed hover:sepia" />
+       
+        </div> */}
     </div>
   );
 }
