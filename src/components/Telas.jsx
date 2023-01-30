@@ -73,7 +73,7 @@ export default function Telas() {
         animate={cursorVariant}
       />
       <div className=" flex justify-center ">
-        <h1 className="text-4x1  font-normal pt-12 sm:text-6xl">Almohadones</h1>
+        <h1 className="text-4x1  font-normal pt-16 sm:text-6xl">Almohadones</h1>
       </div>
       <div className="mix_grid  p-4	">
        <div className="mix_grid1 ">

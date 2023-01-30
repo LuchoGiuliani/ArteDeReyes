@@ -30,10 +30,10 @@ export default function Navbar() {
       <div className=" z-50   ">
         
         <Menu  clicked={clicked} handleClick={handleClick} />
-        <div className={` sm:none  links ${clicked ? "active" : ""}`}>      
-          <a className="hover:underline hover:decoration-solid" href="#telas">Telas</a>
-          <a className="hover:underline hover:decoration-solid " href="#oleo">Tec.Mixtas</a>
-          <a className="hover:underline hover:decoration-solid" href="#murales">Murales</a>
+        <div className={` bg-white sm:none  links ${clicked ? "active" : ""}`}>      
+          <a className="hover:underline hover:decoration-solid text-sm  " href="#telas">Telas</a>
+          <a className="hover:underline hover:decoration-solid text-sm " href="#oleo">Tec.Mixtas</a>
+          <a className="hover:underline hover:decoration-solid text-sm " href="#murales">Murales</a>
         </div>
       </div>
     </div>

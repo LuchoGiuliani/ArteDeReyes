@@ -60,7 +60,7 @@ const ImageGrid = () => {
   return (
     <div className={`bg_oleo ${isPreviewOpen ? 'bg_oleo-open' : ''}`}>
       <div  className='flex justify-center' id='oleo'>
-       <h1 className=' sm:text-5xl font-normal text-center pt-12 p-8  '>Pinturas de técnicas mixtas</h1>
+       <h1 className=' sm:text-5xl font-normal text-center pt-16 p-2  '>Pinturas de técnicas mixtas</h1>
       </div>
       <div className='oleo p-6 grid grid-cols-2 justify-center justify-items-center gap-8 md:grid-cols-2'>
         {currentImages.map((image, index) => (

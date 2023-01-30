@@ -51,7 +51,7 @@ export default function Description() {
         variants={variants}
         animate= {cursorVariant}
        />
-      <h1 onMouseEnter={textEnter} onMouseLeave={textLeave} className="relative z-10 top-4 left-[10%] description text-center text-xs sm:text-lg  max-w-xl p-4 pb-7 ">
+      <h1 onMouseEnter={textEnter} onMouseLeave={textLeave} className="relative  top-4 left-[10%] description text-center text-xs sm:text-lg  max-w-xl p-4 pb-7 ">
       Gracias por pasar a conocer nuestra página! 
 Somos Liliana y Mariana REYES, artistas de esencia.
 Desde muy pequeñas incursionamos en el mundo creativo, y no hace mucho, fusionamos nuestros talentos para trabajar juntas en las mismas obras, logrando así un mejor resultado.

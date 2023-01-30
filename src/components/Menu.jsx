@@ -8,7 +8,7 @@ function Menu(props) {
 
   return (
     <motion.div
-      className=" cursor-pointer m-2 sm:max-w-full flex items-center "
+      className=" menu cursor-pointer m-1 sm:max-w-full flex items-center "
       onClick={props.handleClick}
       animate={props.clicked ? "open" : "closed"}
       variants={menuVariants}

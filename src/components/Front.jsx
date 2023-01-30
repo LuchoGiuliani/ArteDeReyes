@@ -44,18 +44,18 @@ export default function Front() {
   const textLeave = () => setCursorVariant("default");
 
   return (
-<div className="">
+<div className="pt-10">
   
-    <div id="front" className="flex justify-evenly items-center  p-2 gap-10 sm:p-7 sm:justify-between  ">
+    <div id="front" className="flex justify-evenly items-center pt-[59px]  p-2 gap-10 sm:p-7 sm:justify-between  ">
       <motion.div
         className="cursor"
         variants={variants}
         animate={cursorVariant}
       />
       <div className="circle rounded-[50%]"></div>
-      <div  className="w-1/5">
+      <div  className="w-1/5 pt-4 z-50">
        
-        <h1  onMouseEnter={textEnter} onMouseLeave={textLeave}  className=" z-50 text-3xl   sm:text-9xl drop-shadow-2xl art_reyes  ">Arte De Reyes</h1>
+        <h1  onMouseEnter={textEnter} onMouseLeave={textLeave}  className="  text-3xl    sm:text-9xl drop-shadow-2xl art_reyes   ">Arte De Reyes</h1>
       </div>
      
       <div className=" w-[30%]">

@@ -36,11 +36,13 @@ h4 {
 
 .circle {
   position: absolute;
-  width: 73%;
-  height: 117%;
-  left: -36%;
-  top: -15%;
-  background: #f1ebcf;
+    width: 71%;
+    height: 117%;
+    left: -39%;
+    top: -16%;
+    background: #f1ebcf;
+    box-shadow: 3px 2px 8px 3px rgb(186 182 143);
+    z-index: 50;
  
 }
 @media (max-width: 1191px) {
@@ -94,12 +96,12 @@ h4 {
     justify-content: space-between !important;
   }
   .links.active {
+    position: absolute;
+    max-width: 120px;
     display: flex;
-    flex-direction: row;
-    top: 2%;
-    left: 15%;
-    gap: 4%;
-    padding-right: 2.5rem;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
     
   }
   .text {
@@ -136,9 +138,13 @@ h4 {
 .navbar_container {
   display: flex;
   justify-content: flex-end;
-  padding: 2%;
+  padding: 12px;
   align-items: center;
   gap: 2%;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 40;
   
 }
 
@@ -187,7 +193,8 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  right: 2%;
+  border-radius: 5%;
+  
 }
 
 .front_background {
@@ -230,6 +237,7 @@ h4 {
 }
 .mix1 {
   grid-area: mix1;
+ 
 }
 .mix2 {
   grid-area: mix2;
