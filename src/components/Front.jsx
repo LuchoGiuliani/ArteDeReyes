@@ -53,9 +53,9 @@ export default function Front() {
           variants={variants}
           animate={cursorVariant}
         />
-        <div className="circle "></div>
+        <div className="circle  "></div>
 
-        <div className="w-1/5 pt-4 z-50">
+        <div className="w-1/5 pt-7 z-50">
           <h1
             onMouseEnter={textEnter}
             onMouseLeave={textLeave}

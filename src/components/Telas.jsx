@@ -11,7 +11,7 @@ export default function Telas() {
       <div className="mix_grid  p-4	">
         <div className="mix_grid1 ">
           <div className="flex flex-col justify-center gap-16">
-            <img className="mix1 w-fit mix  " src="/mix_grid3.png" alt="" />
+            <img className="mix1 w-fit mix   " src="/mix_grid3.png" alt="" />
             <div className="text_container">
               <h1 className=" text-base text-center text">
                 Perpetuar el amor a una mascota con un retrato de él, detalles

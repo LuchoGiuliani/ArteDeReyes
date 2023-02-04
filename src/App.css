@@ -72,7 +72,7 @@ background-color: #272726;
 .background {
   background: linear-gradient(
     180deg,
-    rgba(218, 212, 212, 1) 0%,
+    rgb(230, 224, 206) 0%,
     rgba(255, 255, 255, 1) 15%
   );
 }
@@ -83,7 +83,7 @@ background-color: #272726;
     height: 110%;
     left: -39%;
     top: -16%;
-    background: #f1ebcf;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(241,235,207,1) 100%);
     box-shadow: 1px 2px 8px -1px rgb(186 182 143);
     z-index: 50;
     border-radius: 50%;
@@ -140,6 +140,7 @@ background-color: #272726;
     font-size: 1.2em;
   }
 
+
   .mix_grid1 {
     display: flex !important;
     flex-direction: column;
@@ -149,6 +150,13 @@ background-color: #272726;
 @media (max-width: 1624px) {
   .mix_grid5 {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 1530px) {
+  .circle {
+    display: none;
+    
   }
 }
 
