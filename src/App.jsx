@@ -20,11 +20,11 @@ function App() {
 
   return (
     <div className="App background">
-      <a href='#front' className='wsp'>
+      <a href='#front' className='wsp hover:animate-ping'>
         <img src="/whatsapp.png" alt="" />
       </a>
       {/* navbar */}
-      <div className='main_container h-full'>
+      <div className='main_container h-full relative'>
       <Navbar />
       {/* front */}
       <Front />

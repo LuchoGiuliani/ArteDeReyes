@@ -22,7 +22,7 @@ export default function Navbar() {
       >
         <img
           src="/instagram.png"
-          className="insta_img hover:scale-120 "
+          className="insta_img hover:scale-105 "
           alt=""
         />
       </a>
@@ -31,8 +31,8 @@ export default function Navbar() {
         
         <Menu  clicked={clicked} handleClick={handleClick} />
         <div className={` bg-white sm:none  links ${clicked ? "active" : ""}`}>      
-          <a className="hover:underline hover:decoration-solid text-sm  " href="#telas">Telas</a>
           <a className="hover:underline hover:decoration-solid text-sm " href="#oleo">Tec.Mixtas</a>
+          <a className="hover:underline hover:decoration-solid text-sm  " href="#telas">Telas</a>
           <a className="hover:underline hover:decoration-solid text-sm " href="#murales">Murales</a>
         </div>
       </div>

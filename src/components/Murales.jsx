@@ -1,7 +1,13 @@
 import React from 'react'
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 export default function Murales() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
+    
     <div id='murales'>
       <div  className='flex justify-center ' id='murales'>
         <h1 className='font-normal pt-16 pb-12 text-[36px]  sm:text-6xl   text-zinc-800'>  Murales</h1>

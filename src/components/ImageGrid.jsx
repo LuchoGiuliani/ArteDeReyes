@@ -1,9 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 const ImageGrid = () => {
   const [opacity, setOpacity] = useState(1);
-  //...
-
   const closePreview = () => {
     document.getElementById("preview-image").classList.add("fade-out");
     setIsPreviewOpen(false);
@@ -11,17 +9,18 @@ const ImageGrid = () => {
       setPreviewImage(null);
     }, 500);
   };
-  
+
   const [images, setImages] = useState([
-    'oleo1.png',
-    'oleo2.png',
-    'oleo3.png',
-    'oleo4.png',
-    'oleo5.png',
-    'oleo2.png',
-    'oleo7.png',
-    'oleo8.png',
+    "oleo1.png",
+    "oleo2.png",
+    "oleo3.png",
+    "oleo4.png",
+    "oleo5.png",
+    "oleo2.png",
+    "oleo7.png",
+    "oleo8.png",
   ]);
+
   const [currentImages, setCurrentImages] = useState(images);
   const [previewImage, setPreviewImage] = useState(null);
   const [isPreviewOpen, setIsPreviewOpen] = useState(false);
@@ -55,20 +54,33 @@ const ImageGrid = () => {
     setIsPreviewOpen(true);
   };
 
-
-
   return (
-    <div className={`bg_oleo ${isPreviewOpen ? 'bg_oleo-open' : ''}`}>
-      <div  className='flex justify-center' id='oleo'>
-       <h1 className=' sm:text-5xl font-normal text-center pt-16 p-2  '>Pinturas de técnicas mixtas</h1>
+    <div className={`bg_oleo ${isPreviewOpen ? "bg_oleo-open" : ""}`}>
+      <div className="flex justify-center" id="oleo">
+        <h1 className=" sm:text-5xl font-normal text-center pt-16 p-2  ">
+          Pinturas de técnicas mixtas
+        </h1>
       </div>
-      <div className='oleo p-6 grid grid-cols-2 justify-center justify-items-center gap-8 md:grid-cols-2'>
+      <div className="oleo p-6 grid grid-cols-2 justify-center justify-items-center gap-8 md:grid-cols-2">
         {currentImages.map((image, index) => (
-          <img className='max-h-[580px] cursor-pointer' src={image} key={index} onClick={() => openPreview(image)} />
+          <img
+            className="max-h-[580px] cursor-pointer"
+            src={image}
+            key={index}
+            onClick={() => openPreview(image)}
+          />
         ))}
         {previewImage && (
-          <div className='preview-overlay   ' style={{ opacity: opacity, transition: 'opacity 1s' }}>
-            <img id="preview-image" className='preview-image p-6' src={previewImage} onClick={closePreview} />
+          <div
+            className="preview-overlay"
+            style={{ opacity: opacity, transition: "opacity 1s" }}
+          >
+            <img
+              id="preview-image"
+              className="preview-image p-6"
+              src={previewImage}
+              onClick={closePreview}
+            />
           </div>
         )}
       </div>
@@ -77,5 +89,3 @@ const ImageGrid = () => {
 };
 
 export default ImageGrid;
-
-
