@@ -9,7 +9,7 @@ export default function Description() {
   });
 
   const [cursorVariant, setCursorVariant] = useState("default");
-  console.log(mousePosition);
+  
 
   useEffect(() => {
     const mouseMove = (e) => {
@@ -17,7 +17,7 @@ export default function Description() {
         x: e.clientX,
         y: e.clientY,
       });
-      console.log(e);
+      
     };
     window.addEventListener("mousemove", mouseMove);
 
@@ -32,34 +32,36 @@ export default function Description() {
       y: mousePosition.y - 10,
     },
     text: {
-      height: 150,
-      width: 150,
-      x: mousePosition.x - 75,
-      y: mousePosition.y - 75,
+      height: 80,
+      width:80,
+      x: mousePosition.x - 45,
+      y: mousePosition.y - 45,
+      
     },
   };
 
   const textEnter = () => setCursorVariant("text");
   const textLeave = () => setCursorVariant("default");
+
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center pb-2">
       <motion.div
         className="cursor"
         variants={variants}
         animate={cursorVariant}
       />
-      <h1
+      <p
         onMouseEnter={textEnter}
         onMouseLeave={textLeave}
-        className="relative  top-4 left-[10%] description text-center text-xs sm:text-lg  max-w-xl p-4 pb-7 "
+        className="relative font-semibold  top-4 left-[10%] description text-center text-xs sm:text-lg  max-w-xl p-4 pb-7  text-gray-100  linear-color"
       >
         Gracias por pasar a conocer nuestra página! Somos Liliana y Mariana
-        REYES, artistas de esencia. Desde muy pequeñas incursionamos en el mundo
+        Reyes, artistas de esencia. Desde muy pequeñas incursionamos en el mundo
         creativo, y no hace mucho, fusionamos nuestros talentos para trabajar
         juntas en las mismas obras, logrando así un mejor resultado. Es una
         experiencia de hermanas maravillosa, en la cual potenciamos nuestras
         capacidades. Esperamos que lo disfruten!
-      </h1>
+      </p>
       <img
         className="relative w-[20%] top-28 right-10"
         src="/arrow.svg"

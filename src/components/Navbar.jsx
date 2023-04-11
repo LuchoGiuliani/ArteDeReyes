@@ -1,18 +1,32 @@
-import React from "react";
-import { motion } from "framer-motion";
-
-import { useState } from "react";
-
-
+import React, { useState, useEffect, useRef } from "react";
 import Menu from "./Menu";
+import { NavbarLinks } from "../constants";
 
-export default function Navbar() {
+ const Navbar = () => {
+
   const [clicked, setClicked] = useState(false);
-  console.log(clicked);
+  const menuRef = useRef(null);
 
   const handleClick = () => {
     setClicked(!clicked);
   };
+
+  useEffect(() => {
+    // Add event listener to detect clicks outside of the menu
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setClicked(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    // Remove event listener on unmount
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuRef]);
+
   return (
     <div className="navbar_container ">
       <a
@@ -27,15 +41,22 @@ export default function Navbar() {
         />
       </a>
 
-      <div className=" z-50   ">
-        
-        <Menu  clicked={clicked} handleClick={handleClick} />
-        <div className={` bg-white sm:none  links ${clicked ? "active" : ""}`}>      
-          <a className="hover:underline hover:decoration-solid text-sm " href="#oleo">Tec.Mixtas</a>
-          <a className="hover:underline hover:decoration-solid text-sm  " href="#telas">Telas</a>
-          <a className="hover:underline hover:decoration-solid text-sm " href="#murales">Murales</a>
+      <div ref={menuRef} className="z-50">
+        <Menu clicked={clicked} handleClick={handleClick} />
+        <div className={`bg-white sm:none links ${clicked ? "active" : ""}`}>
+          {NavbarLinks.map((link) => (
+            <a
+              key={link.name}
+              className="hover:underline hover:decoration-solid text-sm"
+              href={`#${link.name}`}
+            >
+              {link.name}
+            </a>
+          ))}
         </div>
       </div>
     </div>
   );
 }
+
+export default Navbar

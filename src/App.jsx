@@ -1,52 +1,49 @@
-import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import {
+  Navbar,
+  Hero,
+  Telas,
+  Description,
+  Oleo,
+  Murales,
+  Footer,
+  LoadingPage
+} from "./components";
 
-import Navbar from './components/Navbar'
-import Front from './components/Front'
-import Telas from './components/Telas'
-import Description from './components/Description'
-import Oleo from './components/Oleo'
-import Murales from './components/Murales'
-import Footer from './components/Footer'
-
-
-import { motion } from 'framer-motion'
+import "./App.css";
+import { useState, useEffect } from "react";
 
 function App() {
 
-  
- 
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
+
+  if (loading) {
+    return <LoadingPage onLoad={() => setLoading(false)} />;
+  }
 
   return (
     <div className="App background">
-      <a href='#front' className='wsp hover:animate-ping'>
+      <a href="#front" className="wsp  hover:scale-110">
         <img src="/whatsapp.png" alt="" />
       </a>
-      {/* navbar */}
-      <div className='main_container h-full relative'>
-      <Navbar />
-      {/* front */}
-      <Front />
-      {/* description */}
-      {<Description />}
+      <div className="main_container h-full ">
+        <Navbar />
+        <div className="bg-hero">
+        <Hero />
+        <Description />
+        </div>
       </div>
-      {/* oleo */}
       <Oleo />
-      {/* telas */}
-      <Telas />   
-      {/* murales */}
+      <Telas />
       <Murales />
-      {/* footer */}
       <Footer />
-    
-  
-     
-     
-      
-     
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
