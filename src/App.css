@@ -292,6 +292,7 @@ h3 {
 
 .bg_oleo {
   background-color: #ece8e1;
+  
 }
 
 .bg_oleo-open {
@@ -308,4 +309,13 @@ h3 {
 
 #telas {
   background-color: #eec99c;
+}
+
+
+.oleo_picture {
+  -webkit-box-shadow: 4px 7px 21px 4px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 7px 21px 4px rgba(0,0,0,0.75);
+box-shadow: 4px 7px 21px 4px rgba(0,0,0,0.75);
+background: black;
+  
 }

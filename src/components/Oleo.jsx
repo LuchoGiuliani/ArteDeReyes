@@ -124,10 +124,10 @@ export default function Oleo() {
           </h3>
           </div>
         </div>
-        <div className="oleo p-6 grid grid-cols-2 justify-center justify-items-center gap-8 md:grid-cols-2">
+        <div className=" oleo p-6 grid grid-cols-2 justify-center justify-items-center gap-8 md:grid-cols-2">
           {currentImages.map((image, index) => (
             <img
-              className="  max-h-[580px] cursor-pointer z-10"
+              className=" oleo_picture  max-h-[580px] cursor-pointer z-10"
               src={image}
               key={index}
               onClick={() => openPreview(image)}
@@ -140,7 +140,7 @@ export default function Oleo() {
             >
               <img
                 id="preview-image"
-                className=" preview-image p-6 z-20"
+                className="  preview-image p-6 z-20"
                 src={previewImage}
                 onClick={closePreview}
               />
