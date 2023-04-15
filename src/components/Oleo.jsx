@@ -112,16 +112,16 @@ export default function Oleo() {
         animate={cursorVariant}
       />
       <div className={`bg_oleo ${isPreviewOpen ? "bg_oleo-open" : ""}`}>
-        <div className="flex justify-center" id="oleo">
+        <div className="flex justify-center" id="OLEOS">
         <div
           data-aos="fade-up"
           data-aos-offset="-20"
           data-aos-delay="200"
           data-aos-easing="ease-in-sine"
         >
-          <h3 className=" sm:text-5xl font-normal text-center pt-16 pb-16  ">
+          <h1 className=" sm:text-5xl font-normal text-center pt-16 pb-16  ">
             Pinturas de técnicas mixtas
-          </h3>
+          </h1>
           </div>
         </div>
         <div className=" oleo p-6 grid grid-cols-2 justify-center justify-items-center gap-8 md:grid-cols-2">
@@ -131,6 +131,7 @@ export default function Oleo() {
               src={image}
               key={index}
               onClick={() => openPreview(image)}
+              alt="Pinturas de técnicas mixtas"
             />
           ))}
           {previewImage && (
@@ -143,6 +144,7 @@ export default function Oleo() {
                 className="  preview-image p-6 z-20"
                 src={previewImage}
                 onClick={closePreview}
+                alt="Pinturas de técnicas mixtas"
               />
             </div>
           )}

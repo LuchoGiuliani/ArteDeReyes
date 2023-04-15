@@ -8,8 +8,8 @@ export default function Murales() {
   }, []);
   return (
     
-    <div id='murales'>
-      <div  className='flex justify-center ' id='murales'>
+    <div id='MURALES'>
+      <div  className='flex justify-center ' id='MURALES'>
         <h1 className='font-semibold pt-16 pb-12 text-[36px]  sm:text-6xl   text-zinc-800'>  Murales</h1>
       </div>
       <div className=' m-3 mb-0  flex justify-center items-center gap-8 flex-col'>

@@ -43,7 +43,7 @@ export default function Telas() {
 
   return (
     <div
-      id="telas"
+      id="TELAS"
       className="p-4 z-30"
       onMouseEnter={textEnter}
       onMouseLeave={textLeave}
@@ -53,16 +53,17 @@ export default function Telas() {
         variants={variants}
         animate={cursorVariant}
       />
-      <h3 className=" sm:text-5xl font-normal text-center pt-16 pb-16">
+      <h1 className=" sm:text-5xl font-normal text-center pt-16 pb-16">
         Almohadones
-      </h3>
+      </h1>
 
       <div className="flex gap-4 flex-wrap items-center justify-center	 ">
         {TelasGroup1.map((telas) => (
           <img
             className=" border border-black bg-black border-spacing-4 rounded-full w-[120px] h-[120px] sm:h-[240px] sm:w-[260px] xl:w-[260px]  flex-wrap flex justify-center items-center  "
             src={telas.img}
-            alt="imagenTelas"
+            alt="Imagenes de almohadones"
+            key={telas.id}
           />
         ))}
       </div>
@@ -72,7 +73,7 @@ export default function Telas() {
           <img
             className="mix7  border border-black bg-black border-spacing-4 rounded-full "
             src="/mix_grid7-min.png"
-            alt=""
+            alt="Imagenes de almohadones"
           />
         </div>
         <div className="mix_grid3">
@@ -80,38 +81,34 @@ export default function Telas() {
             <img
               className="  border border-black bg-black border-spacing-4 rounded-full w-[120px] h-[120px] sm:h-[240px] sm:w-[260px] xl:w-[260px] flex-wrap flex justify-center items-center"
               src={telas.img}
-              alt="imagenTelas"
+              alt="Imagenes de almohadones"
+              key={telas.id}
             />
           ))}
-          <h1 className="text-center sm:text-2xl z-90">
-            Cualquier duda o consulta, <br /> no dudes en comunicarte via <br />{" "}
-            <a className=" text-green-600 z-90" href="#">
-              WhatsApp
-            </a>
-          </h1>
+         
           <img
             className="  border border-black bg-black border-spacing-4 rounded-full w-[120px] sm:h-[240px] sm:w-[260px] xl:w-[260px] flex-wrap flex justify-center items-center drop-shadow-2xl "
             src="/mix_grid13-min.png"
-            alt=""
+            alt="Imagenes de almohadones"
           />
         </div>
         <div className="mix_grid4 justify-center flex">
           <img
             className="mix14   border border-black bg-black border-spacing-4 rounded-[1.7rem]  w-[80%] "
             src="/mix_grid14-min.png"
-            alt=""
+            alt="Imagenes de almohadones"
           />
         </div>
         <div className="mix_grid5 pb-14 flex flex-row flex-wrap justify-center">
           <img
             className="mix16   border border-black bg-black border-spacing-4  rounded-xl max-w-[280px]"
             src="/mix_grid16.png"
-            alt=""
+            alt="Imagenes de almohadones"
           />
           <img
             className="mix17   border border-black bg-black border-spacing-4 rounded-xl  sm:max-w-[440px] max-w-[340px]"
             src="/mix_grid17.png"
-            alt=""
+            alt="Imagenes de almohadones"
           />
         </div>
       </div>

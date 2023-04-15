@@ -28,7 +28,7 @@ function App() {
 
   return (
     <div className="App background">
-      <a href="#front" className="wsp  hover:scale-110">
+      <a href="#front" className="wsp  hover:scale-110 z-[999]">
         <img src="/whatsapp.png" alt="" />
       </a>
       <div className="main_container h-full ">

@@ -221,12 +221,12 @@ h3 {
 }
 
 
-#telas {
+#TELAS {
   background-repeat: no-repeat;
   background-size:100% 100%;
 }
 
-#murales {
+#MURALES {
  background-color: beige;
   /* background-image: url("/mural.png"); */
   background-size: cover;
@@ -307,7 +307,7 @@ h3 {
 }
 
 
-#telas {
+#TELAS {
   background-color: #eec99c;
 }
 
