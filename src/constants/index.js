@@ -3,15 +3,15 @@
 export const NavbarLinks = [
     {
     id: 1, 
-    name: "oleo"
+    name: "Oleo"
 },
 {
     id: 2,
-    name: "telas"
+    name: "Telas"
 },
 {
     id: 3,
-    name: "murales"
+    name: "Murales"
 }
 ]
 
