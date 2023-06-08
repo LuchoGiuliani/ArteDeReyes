@@ -10,6 +10,10 @@ module.exports = {
       colors: {
         'piel': '#E3CBAC',
       },
+      screens:{
+        xl: "1530px"
+      }
+      
     },
   },
   plugins: [],

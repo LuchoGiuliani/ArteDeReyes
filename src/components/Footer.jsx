@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
   return (
     <div>
-      <div className="background_footer flex justify-around items-center">
+      <div className="background_footer h-full flex justify-around items-center">
         <a href="https://github.com/LuchoGiuliani">
           <img
             className="max-w-[40px] hover:scale-110"
