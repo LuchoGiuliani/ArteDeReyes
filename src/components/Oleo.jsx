@@ -120,7 +120,7 @@ export default function Oleo() {
           data-aos-delay="200"
           data-aos-easing="ease-in-sine"
         >
-          <h3 className=" sm:text-5xl font-normal text-center pt-16 pb-16 tracking-tight  ">
+          <h3 className=" sm:text-5xl font-normal text-center p-6 sm:pt-16 sm:pb-14 tracking-tight  ">
             Pinturas de técnicas mixtas
           </h3>
           </div>

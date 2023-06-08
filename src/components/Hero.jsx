@@ -61,7 +61,7 @@ export default function Hero() {
     onMouseLeave={textLeave}>
       <div
         id="front"
-        className="flex justify-evenly items-center pt-12   p-2 gap-10 sm:p-7 sm:justify-between  "
+        className="flex justify-evenly items-center pt-12   p-6 gap-10  sm:justify-between  "
       >
         <motion.div
           className="cursor"

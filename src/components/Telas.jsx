@@ -53,7 +53,7 @@ export default function Telas() {
         variants={variants}
         animate={cursorVariant}
       />
-      <h3 className=" tracking-tight sm:text-5xl font-normal text-center pt-12 sm:pt-[196px] pb-16">
+      <h3 className=" tracking-tight sm:text-5xl font-normal text-center pt-12 sm:pt-[196px] pb-12">
         Almohadones
       </h3>
 
