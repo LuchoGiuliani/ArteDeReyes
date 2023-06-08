@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="background_footer h-full flex justify-around items-center">
         <a href="https://github.com/LuchoGiuliani">
           <img
-            className="max-w-[40px] hover:scale-110"
+            className="max-w-[24px] hover:scale-110"
             src="/github.png"
             target="_blank"
             alt=""
@@ -17,7 +17,7 @@ export default function Footer() {
           target="_blank"
         >
           <img
-            className="max-w-[40px] hover:scale-110"
+            className="max-w-[24px] hover:scale-110"
             href="https://www.instagram.com/arte.de.reyes/?hl=es"
             target="_blank"
             src="/instagram.png"

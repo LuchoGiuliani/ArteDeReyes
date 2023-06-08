@@ -48,7 +48,7 @@ import { NavbarLinks } from "../constants";
             <a
               key={link.name}
               className="hover:underline hover:decoration-solid text-sm menu"
-              href={`#${link.name}`}
+              href={`#${link.class}`}
             >
               {link.name}
             </a>
