@@ -13,7 +13,7 @@ function LoadingPage({ onLoad }) {
     const timeout = setTimeout(() => {
       setShow(false);
       onLoad();
-    }, 1000);
+    }, 5000);
 
     return () => clearTimeout(timeout);
   }, [onLoad]);
