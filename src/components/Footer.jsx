@@ -9,7 +9,7 @@ export default function Footer() {
             className="max-w-[24px] hover:scale-110"
             src="/github.png"
             target="_blank"
-            alt=""
+            alt="github"
           />
         </a>
         <a
@@ -21,7 +21,7 @@ export default function Footer() {
             href="https://www.instagram.com/arte.de.reyes/?hl=es"
             target="_blank"
             src="/instagram.png"
-            alt=""
+            alt="instagram"
           />
         </a>
       </div>

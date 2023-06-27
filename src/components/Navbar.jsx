@@ -37,7 +37,7 @@ import { NavbarLinks } from "../constants";
         <img
           src="/instagram.png"
           className="insta_img hover:scale-[80%] "
-          alt=""
+          alt="instagram"
         />
       </a>
 

@@ -35,7 +35,7 @@ function App() {
         <Navbar />
         <div className="bg-hero">
         <Hero />
-        <Description />
+        {/* <Description /> */}
         </div>
       </div>
       <Oleo />

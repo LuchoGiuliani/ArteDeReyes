@@ -83,16 +83,20 @@ h3 {
   .navbar_container {
     max-height:48px ;
   }
+
+  
   
 }
 
 
 
 .insta_img {
-  max-width: 80px;
-  max-height: 40px;
+  max-width: 26px;
+  max-height: 26px;
   transition-delay: 20ms;
 }
+
+
 
 .menu {
   border: solid 1px #f1ebcf;
@@ -226,7 +230,7 @@ h3 {
 }
 
 .wsp {
-  max-width: 42px;
+  max-width: 24px;
   position: fixed;
   bottom: 10px;
   right: 10px;

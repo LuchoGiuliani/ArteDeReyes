@@ -22,15 +22,15 @@ export default function Oleo() {
 
   const [images, setImages] = useState([
     "oleo1.png",
-    "oleo9.png",
+    "oleo9.webp",
     "oleo3.png",
-    "oleo4.png",
-    "oleo5.png",
+    "oleo4.webp",
+    "oleo5.webp",
     "oleo2.png",
-    "oleo7.png",
-    "oleo8.png",
-    "oleo10.png",
-    "oleo11.png",
+    "oleo7.webp",
+    "oleo8.webp",
+    "oleo10.webp",
+    "oleo11.webp",
   ]);
 
   const [currentImages, setCurrentImages] = useState(images);
@@ -132,6 +132,7 @@ export default function Oleo() {
               src={image}
               key={index}
               onClick={() => openPreview(image)}
+              alt="Pinturas de técnicas mixtas"
             />
           ))}
           {previewImage && (
@@ -144,6 +145,7 @@ export default function Oleo() {
                 className=" preview-image p-6 z-20"
                 src={previewImage}
                 onClick={closePreview}
+                alt="Pinturas de técnicas mixtas"
               />
             </div>
           )}

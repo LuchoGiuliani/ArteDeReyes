@@ -17,26 +17,26 @@ export default function Murales() {
             data-aos-offset="200"
             data-aos-delay="200"
             data-aos-easing="ease-in-sine"> 
-          <img className='mural1 rounded-lg max-h-[800px]' src="/mural1-min.png" alt="" />
+          <img className='mural1 rounded-lg max-h-[800px]' src="/mural1-min.png" alt="Mural 1" />
         </div>
         <div data-aos="fade-up"
             data-aos-offset="-200"
             data-aos-delay="200"
             data-aos-easing="ease-in-sine"> 
-          <img className='mural2 rounded-lg max-h-[800px]' src="/shark.png" alt="" />
+          <img className='mural2 rounded-lg max-h-[800px]' src="/shark.webp" alt="Mural 2" />
         </div>
         <div className='pb-6' data-aos="fade-right"
             data-aos-offset="200"
             data-aos-delay="200"
             data-aos-easing="ease-in-sine"> 
-          <img className='mural3 rounded-lg max-h-[800px]' src="/mural2-min.png" alt="" />
+          <img className='mural3 rounded-lg max-h-[800px]' src="/mural2-min.png" alt="Mural 3" />
           
         </div>
         <div className='pb-6' data-aos="fade-up"
             data-aos-offset="200"
             data-aos-delay="200"
             data-aos-easing="ease-in-sine"> 
-          <img className='mural4 rounded-lg max-h-[800px]' src="/mural3-min.png" alt="" />
+          <img className='mural4 rounded-lg max-h-[800px]' src="/mural3-min.png" alt="Mural 4" />
           
         </div>
       </div>
