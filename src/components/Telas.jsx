@@ -60,7 +60,7 @@ export default function Telas() {
       <div className="flex gap-4 flex-wrap items-center justify-center lg:pt-16	 ">
         {TelasGroup1.map((telas) => (
           <img
-            className=" border border-black bg-black border-spacing-4 rounded-full w-[120px] h-[120px] sm:h-[240px] sm:w-[260px] xl:w-[260px]  flex-wrap flex justify-center items-center  "
+            className=" border img_telas border-black bg-black  rounded-full w-[120px] h-[120px] sm:h-[240px] sm:w-[260px] xl:w-[260px]  flex-wrap flex justify-center items-center  "
             src={telas.img}
             alt="imagenTelas"
           />
@@ -70,7 +70,7 @@ export default function Telas() {
       <div className="mix_grid  p-6 sm:p-16	">
         <div className="mix_grid2">
           <img
-            className="mix7  border border-black bg-black border-spacing-4 rounded-full "
+            className="mix7 img_telas  border border-black bg-black  rounded-full "
             src="/mix_grid7-min.png"
             alt=""
           />
@@ -78,7 +78,7 @@ export default function Telas() {
         <div className="mix_grid3">
           {TelasGroup2.map((telas) => (
             <img
-              className="  border border-black bg-black border-spacing-4 rounded-full w-[120px] h-[120px] sm:h-[240px] sm:w-[260px] xl:w-[260px] flex-wrap flex justify-center items-center"
+              className=" img_telas  border border-black bg-black  rounded-full w-[120px] h-[120px] sm:h-[240px] sm:w-[260px] xl:w-[260px] flex-wrap flex justify-center items-center"
               src={telas.img}
               alt="imagenTelas"
             />
@@ -90,26 +90,26 @@ export default function Telas() {
             </a>
           </h1>
           <img
-            className="  border border-black bg-black border-spacing-4 rounded-full w-[120px] sm:h-[240px] sm:w-[260px] xl:w-[260px] flex-wrap flex justify-center items-center drop-shadow-2xl "
+            className=" img_telas border border-black bg-black  rounded-full w-[120px] sm:h-[240px] sm:w-[260px] xl:w-[260px] flex-wrap flex justify-center items-center drop-shadow-2xl "
             src="/mix_grid13-min.png"
             alt=""
           />
         </div>
         <div className="mix_grid4 justify-center flex">
           <img
-            className="mix14   border border-black bg-black border-spacing-4 rounded-[1.7rem]  w-[80%] "
+            className="mix14 img_telas   border border-black bg-black rounded-[1.7rem]  w-[80%] "
             src="/mix_grid14-min.png"
             alt=""
           />
         </div>
         <div className="mix_grid5 pb-14 flex flex-row flex-wrap justify-center">
           <img
-            className="mix16   border border-black bg-black border-spacing-4  rounded-xl max-w-[280px]"
+            className="mix16 img_telas   border border-black bg-black  rounded-xl max-w-[280px]"
             src="/mix_grid16.png"
             alt=""
           />
           <img
-            className="mix17   border border-black bg-black border-spacing-4 rounded-xl  sm:max-w-[440px] max-w-[340px]"
+            className="mix17 img_telas   border border-black bg-black  rounded-xl  sm:max-w-[440px] max-w-[340px]"
             src="/mix_grid17.png"
             alt=""
           />

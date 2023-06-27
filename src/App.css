@@ -358,3 +358,7 @@ h3 {
 #telas {
   background-color: #eec99c;
 }
+
+.img_telas {
+  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.54)
+}

@@ -37,10 +37,10 @@ export default function Hero() {
       y: mousePosition.y - 10,
     },
     text: {
-      height: 80,
-      width:80,
-      x: mousePosition.x - 45,
-      y: mousePosition.y - 45,
+      height: 10,
+      width:10,
+      x: mousePosition.x - 14,
+      y: mousePosition.y - 3,
       
     },
 
@@ -59,15 +59,15 @@ export default function Hero() {
   return (
     <div className="pt-10  " onMouseEnter={textEnter}
     onMouseLeave={textLeave}>
+      <motion.div
+        className="cursor"
+        variants={variants}
+        animate={cursorVariant}
+      />
       <div
         id="front"
         className="flex justify-evenly items-center pt-12   p-6 gap-10  sm:justify-between  "
       >
-        <motion.div
-          className="cursor"
-          variants={variants}
-          animate={cursorVariant}
-        />
         {/* <div className="circle  "></div> */}
         <div className="w-1/5  z-50">
           <div
