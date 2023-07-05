@@ -79,7 +79,7 @@ export default function Hero() {
             data-aos-delay="200"
             data-aos-easing="ease-in-sine"
           >
-            <h1 className=" relative text-3xl text-white  sm:text-9xl drop-shadow-2xl art_reyes   ">
+            <h1 className=" relative text-6xl text-white  sm:text-9xl drop-shadow-2xl art_reyes   ">
               ARTE DE REYES
             </h1>
           </div>
