@@ -1,8 +1,10 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useLayoutEffect } from "react";
 import "aos/dist/aos.css";
 import { motion } from "framer-motion";
 import AOS from "aos";
-
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 
 
@@ -104,6 +106,11 @@ export default function Oleo() {
   const textEnter = () => setCursorVariant("text");
   const textLeave = () => setCursorVariant("default");
 
+ 
+
+ 
+   
+
   return (
     <div className=" bg_oleo flex items-center justify-center"    >
        <motion.div
@@ -111,21 +118,21 @@ export default function Oleo() {
         variants={variants}
         animate={cursorVariant}
       />
-      <div className={` max-w-[1229px] bg_oleo ${isPreviewOpen ? "bg_oleo-open" : ""}`}>
+      <div  className={`box bg_oleo w-full ${isPreviewOpen ? "bg_oleo-open" : ""}`}>
         
-        <div className="flex justify-center " id="oleo">
+        <div className=" flex justify-center fullscreen" id="oleo">
         <div
           data-aos="fade-up"
           data-aos-offset="-20"
           data-aos-delay="200"
           data-aos-easing="ease-in-sine"
         >
-          <h3 className=" sm:text-5xl font-normal text-center p-6 sm:pt-16 sm:pb-14 tracking-tight  ">
+          <h3 className="box3 sm:text-5xl font-normal text-center p-6 sm:pt-16 sm:pb-14 tracking-tight  ">
             Pinturas de técnicas mixtas
           </h3>
           </div>
         </div>
-        <div className="oleo p-6 grid grid-cols-2  justify-items-center gap-8 md:grid-cols-2">
+        <div className="oleo  p-6 grid grid-cols-2  justify-items-center gap-y-10 gap-2 md:grid-cols-3">
           {currentImages.map((image, index) => (
             <img
               className="oleo_img  max-h-[460px] cursor-pointer z-10 hover:scale-[105%]"

@@ -110,7 +110,7 @@ export default function Hero() {
         data-aos-easing="ease-in-sine"
         data-aos-once="true"
       >
-        <p className=" font-semibold  top-4 left-[10%]  text-center text-xs sm:text-lg  max-w-xl p-4 pb-7  text-[#090d1d]  ">
+        <p className=" font-semibold  top-4 left-[10%]  text-center text-xs sm:text-lg  max-w-xl p-2   text-[#090d1d]  ">
           Gracias por pasar a conocer nuestra página! Somos Liliana y Mariana
           Reyes, artistas de esencia. Desde muy pequeñas incursionamos en el
           mundo creativo, y no hace mucho, fusionamos nuestros talentos para

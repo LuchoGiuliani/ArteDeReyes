@@ -44,7 +44,7 @@ export default function Telas() {
   return (
     <div
       id="telas"
-      className="p-4 z-30 "
+      className="p-4 z-30 box2 "
       onMouseEnter={textEnter}
       onMouseLeave={textLeave}
     >

@@ -11,5 +11,5 @@ import Telas from "./Telas";
 import LoadingPage from "./LoadingPage";
 
 export {
-    Navbar,Description,Footer,Menu,Murales, Oleo,Telas, Hero,LoadingPage
+    Navbar,Description,Footer,Menu,Murales, Oleo,Telas, Hero,LoadingPage, 
 }
