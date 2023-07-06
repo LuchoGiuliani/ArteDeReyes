@@ -33,6 +33,8 @@ export default function Oleo() {
     "oleo8.webp",
     "oleo10.webp",
     "oleo11.webp",
+    "oleo12.png",
+    "oleo13.png",
   ]);
 
   const [currentImages, setCurrentImages] = useState(images);
@@ -149,7 +151,7 @@ export default function Oleo() {
             >
               <img
                 id="preview-image"
-                className=" preview-image p-6 z-20"
+                className=" preview-image p-6 z-20 max-w-[440px] sm:max-w-[680px]"
                 src={previewImage}
                 onClick={closePreview}
                 alt="Pinturas de técnicas mixtas"

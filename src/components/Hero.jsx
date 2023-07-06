@@ -60,7 +60,7 @@ export default function Hero() {
   const textLeave = () => setCursorVariant("default");
 
   return (
-    <div className="pt-10 flex flex-col justify-center" onMouseEnter={textEnter}
+    <div className="pt-10 px-6 flex flex-col justify-center" onMouseEnter={textEnter}
     onMouseLeave={textLeave}>
       <motion.div
         className="cursor"
@@ -101,16 +101,16 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center opacity-50">
+      <div className="flex justify-center opacity-30">
       <div
-        className=" rounded-xl pb-2 m-6 bg-[#ffefe7]   max-w-fit   "
+        className="rounded-xl bg-slate-50 p-3 m-4 h-fit "
         data-aos="zoom-in-down"
         data-aos-anchor-placement="top-center"
         data-aos-delay="200"
         data-aos-easing="ease-in-sine"
         data-aos-once="true"
       >
-        <p className=" font-semibold  top-4 left-[10%]  text-center text-xs sm:text-lg  max-w-xl p-2   text-[#090d1d]  ">
+        <p className="font-bold text-[16px] max-w-[960px]   sm:text-[24px]  text-center      text-[#090d1d]  ">
           Gracias por pasar a conocer nuestra página! Somos Liliana y Mariana
           Reyes, artistas de esencia. Desde muy pequeñas incursionamos en el
           mundo creativo, y no hace mucho, fusionamos nuestros talentos para
@@ -119,7 +119,7 @@ export default function Hero() {
           nuestras capacidades. Esperamos que lo disfruten!
         </p>
         <img
-          className="absolute w-[20%] top-[220px] right-10"
+          className="absolute w-[15%] top-[220px] right-10"
           src="/arrow.svg"
           alt="arrow"
         />

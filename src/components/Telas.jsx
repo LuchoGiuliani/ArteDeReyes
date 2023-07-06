@@ -44,7 +44,7 @@ export default function Telas() {
   return (
     <div
       id="telas"
-      className="p-4 z-30 box2 "
+      className="p-6 z-30 box2 "
       onMouseEnter={textEnter}
       onMouseLeave={textLeave}
     >
@@ -53,11 +53,11 @@ export default function Telas() {
         variants={variants}
         animate={cursorVariant}
       />
-      <h3 className=" tracking-tight sm:text-5xl font-normal text-center pt-12 sm:pt-[196px] pb-12">
+      <h3 className=" tracking-tight sm:text-5xl font-normal text-center pt-8  pb-12">
         Almohadones
       </h3>
 
-      <div className="flex gap-4 flex-wrap items-center justify-center lg:pt-16	 ">
+      <div className="flex gap-6 flex-wrap items-center justify-evenly ">
         {TelasGroup1.map((telas) => (
           <img
             className=" border img_telas border-black bg-black  rounded-full w-[120px] h-[120px] sm:h-[240px] sm:w-[260px] xl:w-[260px]  flex-wrap flex justify-center items-center  "
