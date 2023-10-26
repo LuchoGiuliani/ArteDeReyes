@@ -5,9 +5,6 @@ import { zoomIn, fadeIn, textVariant } from "../utils/motion";
 import "aos/dist/aos.css";
 import AOS from "aos";
 
-
-
-
 export default function Hero() {
   useEffect(() => {
     AOS.init();
@@ -41,10 +38,9 @@ export default function Hero() {
     },
     text: {
       height: 10,
-      width:10,
+      width: 10,
       x: mousePosition.x - 14,
       y: mousePosition.y - 3,
-      
     },
 
     fadeIn: {
@@ -60,8 +56,11 @@ export default function Hero() {
   const textLeave = () => setCursorVariant("default");
 
   return (
-    <div className="pt-10 px-6 flex flex-col justify-center" onMouseEnter={textEnter}
-    onMouseLeave={textLeave}>
+    <div
+      className="pt-10 px-6 flex flex-col justify-center"
+      onMouseEnter={textEnter}
+      onMouseLeave={textLeave}
+    >
       <motion.div
         className="cursor"
         variants={variants}
@@ -71,7 +70,6 @@ export default function Hero() {
         id="front"
         className="flex justify-between items-center pt-12   p-6 gap-10  sm:justify-between  "
       >
-        {/* <div className="circle  "></div> */}
         <div className="w-1/5  z-50">
           <div
             data-aos="fade-up"
@@ -102,30 +100,29 @@ export default function Hero() {
         </div>
       </div>
       <div className="flex justify-center opacity-30">
-      <div
-        className="rounded-xl bg-slate-50 p-3 m-4 h-fit "
-        data-aos="zoom-in-down"
-        data-aos-anchor-placement="top-center"
-        data-aos-delay="200"
-        data-aos-easing="ease-in-sine"
-        data-aos-once="true"
-      >
-        <p className="font-bold text-[16px] max-w-[960px]   sm:text-[24px]  text-center      text-[#090d1d]  ">
-          Gracias por pasar a conocer nuestra página! Somos Liliana y Mariana
-          Reyes, artistas de esencia. Desde muy pequeñas incursionamos en el
-          mundo creativo, y no hace mucho, fusionamos nuestros talentos para
-          trabajar juntas en las mismas obras, logrando así un mejor resultado.
-          Es una experiencia de hermanas maravillosa, en la cual potenciamos
-          nuestras capacidades. Esperamos que lo disfruten!
-        </p>
-        <img
-          className="absolute w-[15%] top-[220px] right-10"
-          src="/arrow.svg"
-          alt="arrow"
-        />
+        <div
+          className="rounded-xl bg-slate-50 p-3 m-4 h-fit "
+          data-aos="zoom-in-down"
+          data-aos-anchor-placement="top-center"
+          data-aos-delay="200"
+          data-aos-easing="ease-in-sine"
+          data-aos-once="true"
+        >
+          <p className="font-bold text-[16px] max-w-[960px]   sm:text-[24px]  text-center      text-[#090d1d]  ">
+            Gracias por pasar a conocer nuestra página! Somos Liliana y Mariana
+            Reyes, artistas de esencia. Desde muy pequeñas incursionamos en el
+            mundo creativo, y no hace mucho, fusionamos nuestros talentos para
+            trabajar juntas en las mismas obras, logrando así un mejor
+            resultado. Es una experiencia de hermanas maravillosa, en la cual
+            potenciamos nuestras capacidades. Esperamos que lo disfruten!
+          </p>
+          <img
+            className="absolute w-[15%] top-[220px] right-10"
+            src="/arrow.svg"
+            alt="arrow"
+          />
+        </div>
       </div>
-      </div>
-    
     </div>
   );
 }

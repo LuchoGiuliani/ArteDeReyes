@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import AOS from "aos";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
 
 
 

@@ -1,8 +1,6 @@
 import Navbar from "./Navbar";
-
 import Footer from "./Footer";
 import Hero from "./Hero";
-
 import Menu from "./Menu";
 import Murales from "./Murales";
 import Oleo from "./Oleo";
